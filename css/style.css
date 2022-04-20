@@ -392,60 +392,60 @@
     /*index*/
     /*header*/
 .site-header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    padding-top: 44px;
-    padding-bottom: 44px;
-    background-color: #ffffff;
-    z-index: 2;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding-top: 44px;
+  padding-bottom: 44px;
+  background-color: #ffffff;
+  z-index: 2;
 }
 .site-header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .site-header__link {
-  
+
 }
 .site-header__link-img {
-    display: block;
+  display: block;
 }
 .site-header__nav {
 }
 .site-header__list {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .site-header__item {
-    
+  
 }
 .site-header__item:not(:last-child) {
-    margin-right: 32px;
+  margin-right: 32px;
 }
 .site-header__item-link {
-    font-family: 'Barlow';
-    display: inline-block;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
-    letter-spacing: 0.923077px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #83888F;
+  font-family: 'Barlow';
+  display: inline-block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #83888F;
 
 }
 
 .site-header__tugma {
-    display: none;
-    text-decoration: none;
+  display: none;
+  text-decoration: none;
 }
 .site-header__tugma-img {
-   display: block;
+ display: block;
 }
 
 /**/
@@ -837,55 +837,81 @@
 }
 /*header*/
 @media only screen and (max-width: 660px) {
-  .site-header {
-    position: relative;
-    z-index: 1;
-    padding-top: 32px;
-    padding-bottom: 40px;
+  .site-header__container {
+      flex-direction: column;
   }
-  .site-header__link-img {
-    width: 162px;
+  .site-header__container-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
   }
-
+  .site-header__link {
+      display: block;
+  }
+  .site-header__tugma {
+      display: block;
+      margin-left: 200px;
+  }
   .site-header__nav {
-    height: 100vh;
-    width: 100%;
-    position: absolute;
-    z-index: 1;
-    top: 100%;
-    left: 0;
-    display: none;
-    background-image: linear-gradient(0deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
-  }
-  .site_header__active .site-header__nav {
-    display: block;
-
+      margin-top: 30px;
   }
   .site-header__list {
-    flex-direction: column;
-    text-align: center;
+      flex-direction: column;
+      align-items: center;
   }
   .site-header__item:not(:last-child) {
-    margin-right: 0;
-    margin-bottom: 32px;
+      margin-bottom: 12px;
+  }
 }
-  .site-header__item-link {
-    font-family: 'Fraunces';
-    display: inline-block;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 32px;
-    text-decoration: none;
-    color: #333d4b;
-
-}
-
-.site_header__active .site-header__tugma {
-  background-color: yellow;
-}
+@media only screen and (max-width: 520px) {
   .site-header__tugma {
-    display: block;
-  }  
+      margin-left: 170px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .site-header__tugma {
+      margin-left: 150px;
+  }
+  .site-header__link-img {
+      width: 230px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .site-header__tugma {
+      margin-left: 130px;
+  }
+  .site-header__link-img {
+      width: 220px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .site-header__tugma {
+      margin-left: 100px;
+  }
+  .site-header__link-img {
+      width: 210px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .site-header__tugma {
+      margin-left: 80px;
+  }
+  .site-header__link-img {
+      width: 200px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .site-header__tugma {
+      margin-left: 50px;
+  }
+  .site-header__link-img {
+      width: 190px;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .site-header__tugma {
+      margin-left: 30px;
+  }
 }
 /*section1*/
 @media only screen and (max-width: 768px) {
